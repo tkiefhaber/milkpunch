@@ -1,1 +1,20 @@
+div class="boobs"
+  table
+    tr
+      td class="circle"
+        form action="/" method="POST"
+          input.text type="hidden" name="boob" value="left"
+          input.text type="hidden" name="milkpunch" value="#{DateTime.now}"
+          input.button type="submit" value="PUNCH LEFT" class="submit"
+
+      td class="circle"
+        form action="/" method="POST"
+          input.text type="hidden" name="boob" value="right"
+          input.text type="hidden" name="milkpunch" value="#{DateTime.now}"
+          input.button type="submit" value="PUNCH RIGHT" class="submit"
+    tr
+      td class="punch-card"
+        = @left_punch.milkpunch.strftime('%b %e, %l:%M %p')
+      td class="punch-card"
+        = @right_punch.milkpunch.strftime('%b %e, %l:%M %p')
 
