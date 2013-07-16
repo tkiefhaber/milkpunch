@@ -1,0 +1,207 @@
+have_library: checking for main() in -lpq... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib -L/usr/lib -L. -L'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib'  -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib -L/usr/lib -L. -L'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib'  -L/usr/local/lib     -lruby-static -lpq  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for libpq-fe.h... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -E -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libpq-fe.h>
+/* end */
+
+--------------------
+
+have_header: checking for libpq/libpq-fs.h... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -E -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libpq/libpq-fs.h>
+/* end */
+
+--------------------
+
+have_header: checking for postgres.h... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -E -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG  conftest.c -o conftest.i"
+In file included from /usr/include/postgresql/server/postgres.h:47,
+                 from conftest.c:3:
+/usr/include/postgresql/server/c.h:96:1: warning: "_" redefined
+In file included from /Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/ruby.h:67,
+                 from /Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby.h:32,
+                 from conftest.c:1:
+/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/defines.h:42:1: warning: this is the location of the previous definition
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <postgres.h>
+/* end */
+
+--------------------
+
+have_header: checking for mb/pg_wchar.h... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -E -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <mb/pg_wchar.h>
+/* end */
+
+--------------------
+
+have_header: checking for catalog/pg_type.h... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -E -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <catalog/pg_type.h>
+/* end */
+
+--------------------
+
+have_func: checking for localtime_r()... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib -L/usr/lib -L. -L'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib'  -L/usr/local/lib    -lpq  -lruby-static -lpq  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))localtime_r; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for gmtime_r()... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib -L/usr/lib -L. -L'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib'  -L/usr/local/lib    -lpq  -lruby-static -lpq  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))gmtime_r; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PQsetClientEncoding()... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib -L/usr/lib -L. -L'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib'  -L/usr/local/lib    -lpq  -lruby-static -lpq  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘PQsetClientEncoding’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))PQsetClientEncoding; return 0; }
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib -L/usr/lib -L. -L'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib'  -L/usr/local/lib    -lpq  -lruby-static -lpq  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘PQsetClientEncoding’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { PQsetClientEncoding(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for pg_encoding_to_char()... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib -L/usr/lib -L. -L'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib'  -L/usr/local/lib    -lpq  -lruby-static -lpq  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘pg_encoding_to_char’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))pg_encoding_to_char; return 0; }
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib -L/usr/lib -L. -L'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib'  -L/usr/local/lib    -lpq  -lruby-static -lpq  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘pg_encoding_to_char’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { pg_encoding_to_char(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PQfreemem()... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib -L/usr/lib -L. -L'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib'  -L/usr/local/lib    -lpq  -lruby-static -lpq  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘PQfreemem’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))PQfreemem; return 0; }
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1/ruby/backward -I/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include/ruby-1.9.1 -I. -I/usr/include -I/usr/include/postgresql/server -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib -L/usr/lib -L. -L'/Users/tomkiefhaber/.rbenv/versions/1.9.3-p327/lib'  -L/usr/local/lib    -lpq  -lruby-static -lpq  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘PQfreemem’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { PQfreemem(); return 0; }
+/* end */
+
+--------------------
+

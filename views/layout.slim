@@ -1,0 +1,13 @@
+doctype html
+html lang="en"
+  head
+    title== "Random Recognition"
+    meta charset="utf-8"
+    == css :styles
+body 
+  javascript:
+    var bgcolorlist=new Array("#e9ba26", "#f0812b", "#5fb8dd", "#ea0b8c", "#262626")
+
+    document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]
+  section
+    == yield

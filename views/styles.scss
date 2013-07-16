@@ -1,0 +1,30 @@
+@import "bourbon/bourbon";
+
+$honeycomb: #e9ba26;
+$clementine: #f0812b;
+$slushie: #5fb8dd;
+$frostie: #ea0b8c;
+$whale: #262626;
+$main-font: Arial Rounded, sans-serif;
+$gw-column: 100px;
+$gw-gutter: 200px;
+
+body {
+  width: grid-width(4);
+  margin-left: $gw-gutter;
+  margin-top: 150px;
+  color: white;
+  font-family: "Arial Rounded MT", Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  text-transform: lowercase;
+}
+
+a {
+  font-family: $main-font;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  position: fixed;
+  left: 1100px;
+  top: 700px;
+}
