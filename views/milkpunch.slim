@@ -1,21 +1,21 @@
 div class="boobs"
   table
     tr
-      td class="circle"
+      td
         form action="/" method="POST"
           input.text type="hidden" name="boob" value="left"
           input.text type="hidden" name="milkpunch" value="#{DateTime.now.new_offset('-04:00')}"
           input.button type="submit" value="PUNCH LEFT" class="submit"
 
-      td class="circle"
+      td
         form action="/" method="POST"
           input.text type="hidden" name="boob" value="right"
           input.text type="hidden" name="milkpunch" value="#{DateTime.now.new_offset('-04:00')}"
           input.button type="submit" value="PUNCH RIGHT" class="submit"
     tr
-      td class="punch-card"
+      td class="punch-card" id="left"
         = @left_punch.milkpunch.strftime('%b %e, %l:%M %p')
-      td class="punch-card"
+      td class="punch-card" id="right"
         = @right_punch.milkpunch.strftime('%b %e, %l:%M %p')
 
 
