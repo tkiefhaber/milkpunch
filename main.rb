@@ -15,6 +15,7 @@ end
 get '/' do
   @left_punch = left_punch
   @right_punch = right_punch
+  @bottle_punch = bottle_punch
   slim :milkpunch
 end
 
@@ -38,5 +39,9 @@ helpers do
 
   def right_punch
     Milkpunch.last(:boob => 'right')
+  end
+
+  def bottle_punch
+    Milkpunch.last(:boob => 'bottle')
   end
 end

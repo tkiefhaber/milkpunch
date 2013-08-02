@@ -17,5 +17,12 @@ div class="boobs"
         = @left_punch.milkpunch.strftime('%b %e, %l:%M %p')
       td class="punch-card" id="right"
         = @right_punch.milkpunch.strftime('%b %e, %l:%M %p')
-
-
+    tr
+      td
+        form action="/" method="POST"
+          input.text type="hidden" name="boob" value="bottle"
+          input.text type="hidden" name="milkpunch" value="#{DateTime.now.new_offset('-04:00')}"
+          input.button type="submit" value="BOTTLE PUNCH" class="submit"
+    tr
+      td class="punch-card" id="bottle"
+        = @bottle_punch.milkpunch.strftime('%b %e, %l:%M %p')

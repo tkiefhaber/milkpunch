@@ -9,14 +9,20 @@ body
     == yield
 
   javascript:
-    var left = new Date(document.getElementById("left").innerHTML)
-    var right = new Date(document.getElementById("right").innerHTML)
-    if (left > right)
-      {
-        document.body.style.background="#9F90D0";
-      }
-    else
-      {
-        document.body.style.background="#9D1309";
-      }
+    function setBackground() {
+      var left = new Date(document.getElementById("left").innerHTML);
+      var right = new Date(document.getElementById("right").innerHTML);
+      var bottle = new Date(document.getElementById("bottle").innerHTML);
+      var times = [left, right, bottle];
+      var maxDate = new Date(Math.max.apply(null,times));
+      if (String(maxDate) == String(left))
+        {document.body.style.background="#9F90D0";}
+      else if (String(maxDate) == String(right))
+        {document.body.style.background="#9D1309";}
+      else
+        {document.body.style.background="#05B8CC";}
+      };
+      window.onload = function() {
+        setBackground();
+      };
 
